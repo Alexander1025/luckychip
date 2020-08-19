@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-main {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-head{
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.App-board{
+  background-color: #385182;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.App-row{
+  display: flex;
+}
+
+.App-main .App-row1 > div{
+  background-color: #244826;
+}
+
+.App-main .App-row1 > div:nth-of-type(1){
+  background-color: #59775b;
+}
+
+.App-row > div{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  text-align: center;
+  margin: 3px;
+  background-color: #418a46;
+  position: relative;
+}
+
+.App-arms{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-armslist{
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
+}
+
+.App-arms > div{
+  width: 25%;
+}
+
+.App-tips{
+  text-align: center;
+}
+
+.App-row > div span{
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.App-row > div > img{
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* transform: translate(-50%, 50%;) */
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
