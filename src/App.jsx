@@ -467,7 +467,9 @@ class NameForm extends React.Component {
         <div className="App-head">
           <div>
             分数:{this.state.score}
-            <img src={'./../public/icon/1.png' || ''} alt=""/>
+            
+            <img src={'./../public/icon/1.png' || './../public/icon/9.png'} alt=""/>
+            
           </div>
           <div>
             当前等级：{this.state.lv}
