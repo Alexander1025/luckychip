@@ -122,13 +122,15 @@ class NameForm extends React.Component {
     if (!item1.text){
       console.log("放下");
       this.state.boardData[index][index1].text = this.state.nextChip[0];
-      this.randomAdd();
-      this.setState({
-        boardData: [...this.state.boardData]
-      });
-      this.calcScore(this.state.nextChip[0], 1);
-      this.state.nextChip.shift();
-      this.state.nextChip.push(parseInt(Math.random()*(parseInt(this.state.lv)+1))+1);
+      setTimeout(()=>{
+        this.randomAdd();
+        this.setState({
+          boardData: [...this.state.boardData]
+        });
+        this.calcScore(this.state.nextChip[0], 1);
+        this.state.nextChip.shift();
+        this.state.nextChip.push(parseInt(Math.random()*(parseInt(this.state.lv)+1))+1);
+      },600);
     } else {
       console.log("计算");
       this.setState({
